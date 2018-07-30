@@ -74,6 +74,8 @@ class LoginController extends Controller
      */
     public function logout(Request $request)
     {
+        $this->guard()->user()->clearAccessToken();
+
         $this->guard()->logout();
 
         $request->session()->flush();

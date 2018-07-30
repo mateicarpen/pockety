@@ -43,4 +43,10 @@ class User extends Authenticatable
         $this->last_article_time = $time;
         $this->save();
     }
+
+    public function clearAccessToken()
+    {
+        $this->pocket_access_token = null;
+        $this->save();
+    }
 }
