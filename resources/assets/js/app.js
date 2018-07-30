@@ -42,7 +42,6 @@ var persistence = {
             url: this.apiPrefix + url,
             data: data,
             type: method,
-            //headers: {'Authorization': "Bearer " + window.apiToken},
             success: callback
         });
     }
