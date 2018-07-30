@@ -43,4 +43,4 @@ gulp # or gulp --production
 ## Technologies used
 
 - Laravel 5.3
-- Vue.js
+- Vue.js 1.0
